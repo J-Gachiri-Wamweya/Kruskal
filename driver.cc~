@@ -1,0 +1,30 @@
+#include "DisjointSets.hpp"
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+
+
+
+int main(int argc, char *argv[]) {
+  int n, m;
+   
+  n = atoi(argv[0]);
+  DisjointSets(n);
+  for (int i=0; i<(n); ++i){
+   D.MergeSets (0,i);
+  }
+  ChainNode *temp = new ChainNode();
+  temp = 0;
+  
+  while (temp->next){
+    cout <<temp->Node;
+  }
+  return 0;
+  
+  
+	
+}
+
